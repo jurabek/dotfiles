@@ -110,3 +110,21 @@ export PATH="${PATH}:${HOME}/.krew/bin:${HOME}/go/bin"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias cls="clear"
+alias kx="kubectx"
+alias cat="ccat $*"
+alias cat0="/bin/cat $*" # for cases when you need plain `cat`
+alias recong="flux reconcile source git $*"
+alias reconk="flux reconcile kustomization $*"
+
+alias fgk="flux get kustomizations $*"
+
+currency() { 
+  curl -s "http://data.fixer.io/api/latest?access_key=90f8ea3c318b819a1a67a68539daa2fc&symbols=$1" | grep -Eo "[0-9]*[.][0-9]*";
+}
+
+weather() { curl "http://wttr.in/$1"; }
+myip() { dig +short myip.opendns.com @resolver1.opendns.com ; }
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/jurabek/.sdkman"
+[[ -s "/Users/jurabek/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jurabek/.sdkman/bin/sdkman-init.sh"
