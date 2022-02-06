@@ -1,0 +1,93 @@
+- 1Password 7.app
+- AdBlock.app
+- Adobe Acrobat Reader DC.app
+- Alfred 4.app
+- Amphetamine.app
+- Anki.app
+- AudioBookBinder.app
+- Bitwarden.app
+- Brave Browser.app
+- Cinebench.app
+- CopyClip.app
+- DB Browser for SQLite.app
+- DBeaver.app
+- Discord.app
+- Docker.app
+- DuckDuckGo Privacy Essentials.app
+- Elmedia Player.app
+- F-Secure
+- Fig.app
+- Firefox.app
+- Folx.app
+- Fork.app
+- GitHub Desktop.app
+- Google Chrome.app
+- Grammarly for Safari.app
+- HTTPie.app
+- HandBrake.app
+- Hidden Bar.app
+- Hyper.app
+- Infra.app
+- Insomnia Designer.app
+- Insomnia.app
+- Instapaper.app
+- IntelliJ IDEA.app
+- Kaspersky Secure Connection.app
+- Keka.app
+- KeyStore Explorer.app
+- Keynote.app
+- Kindle.app
+- Lens.app
+- Logi Options.app
+- Microsoft Edge.app
+- Microsoft Excel.app
+- Microsoft Outlook.app
+- Microsoft Teams.app
+- Microsoft Word.app
+- Miro.app
+- Monosnap.app
+- NetSpot.app
+- NightOwl.app
+- NoSQL Workbench.app
+- Notion.app
+- Numbers.app
+- OneDrive.app
+- Pages.app
+- Plex Media Server.app
+- PopcornTime.app
+- Postman.app
+- PrimeVideo.app
+- ProtonVPN.app
+- Rancher Desktop.app
+- Raspberry Pi Imager.app
+- Rectangle.app
+- Rider.app
+- Safari.app
+- SamsungPortableSSD_1.0.app
+- Save to Pocket.app
+- Send to Kindle
+- Signal.app
+- Skype for Business.app
+- Skype.app
+- Slack.app
+- Soda Player.app
+- Sourcetree.app
+- Spotify.app
+- Telegram.app
+- Todoist.app
+- Tor Browser.app
+- Udeler.app
+- Utilities
+- VLC.app
+- Viber.app
+- Visual Studio Code.app
+- WhatsApp.app
+- Wireshark.app
+- Xamarin Profiler.app
+- Xee³.app
+- calibre.app
+- iGlance.app
+- iTerm.app
+- pgAdmin 4.app
+- vscode-big-sur-icons
+- zoom.us.app
