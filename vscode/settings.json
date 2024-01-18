@@ -1,62 +1,109 @@
 {
-    "window.zoomLevel": 1,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "java.semanticHighlighting.enabled": true,
-    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/jurabek/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
-    "java.trace.server" : "verbose",
-    "terminal.integrated.fontFamily": "'SourceCodePro Nerd Font'",
-    "terminal.integrated.fontSize": 14,
-    "go.useLanguageServer": true,
-    "editor.fontSize": 16,
-    "git.enableSmartCommit": true,
-    "autoDarkMode.darkTheme": "Noctis Minimus",
-    "autoDarkMode.lightIconTheme": "material-icon-theme",
-    "autoDarkMode.darkIconTheme": "material-icon-theme",
-    "autoDarkMode.lightTheme": "Noctis Minimus",
-    "editor.fontFamily": "Dank Mono",
-    "editor.fontLigatures": true,
-    "go.formatTool": "goimports",
-    "maven.executable.preferMavenWrapper": true,
-    "go.lintTool": "golangci-lint",
-    "java.project.importOnFirstTimeStartup": "automatic",
-    "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": false,
-    "editor.minimap.enabled": false,
-    "java.refactor.renameFromFileExplorer": "autoApply",
-    "java.configuration.checkProjectSettingsExclusions": false,
-    "task.problemMatchers.neverPrompt": {
-        "shell": true
-    },
-    "workbench.colorTheme": "Community Material Theme",
-    "workbench.iconTheme": "material-icon-theme",
-    // Color Override for terminal
-    "workbench.colorCustomizations": {
-        "activityBarBadge.background": "#5C6BC0",
-        "list.activeSelectionForeground": "#5C6BC0",
-        "list.inactiveSelectionForeground": "#5C6BC0",
-        "list.highlightForeground": "#5C6BC0",
-        "scrollbarSlider.activeBackground": "#5C6BC050",
-        "editorSuggestWidget.highlightForeground": "#5C6BC0",
-        "textLink.foreground": "#5C6BC0",
-        "progressBar.background": "#5C6BC0",
-        "pickerGroup.foreground": "#5C6BC0",
-        "tab.activeBorder": "#5C6BC0",
-        "notificationLink.foreground": "#5C6BC0",
-        "editorWidget.resizeBorder": "#5C6BC0",
-        "editorWidget.border": "#5C6BC0",
-        "settings.modifiedItemIndicator": "#5C6BC0",
-        "settings.headerForeground": "#5C6BC0",
-        "panelTitle.activeBorder": "#5C6BC0",
-        "breadcrumb.activeSelectionForeground": "#5C6BC0",
-        "menu.selectionForeground": "#5C6BC0",
-        "menubar.selectionForeground": "#5C6BC0",
-        "activityBar.activeBorder": "#5C6BC0",
-        "editor.findMatchBorder": "#5C6BC0",
-        "selection.background": "#5C6BC040",
-        "statusBarItem.remoteBackground": "#5C6BC0"
-    },
-    "materialTheme.accent": "Indigo",
-    "breadcrumbs.enabled": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.semanticHighlighting.enabled": true,
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/jurabek/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+  "java.trace.server": "verbose",
+  "terminal.integrated.fontFamily": "'SourceCodePro Nerd Font'",
+  "terminal.integrated.fontSize": 14,
+  "go.useLanguageServer": true,
+  "git.enableSmartCommit": true,
+  "autoDarkMode.darkTheme": "Atom One Dark",
+  "autoDarkMode.lightIconTheme": "vscode-icons",
+  "autoDarkMode.darkIconTheme": "vscode-icons",
+  "autoDarkMode.lightTheme": "Atom One Dark",
+  // "editor.fontFamily": "Geist Mono",
+  "editor.fontFamily": "'Monaspace Neon', monospace",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "400",
+  "go.formatTool": "goimports",
+  "maven.executable.preferMavenWrapper": true,
+  "go.lintTool": "golangci-lint",
+  "java.project.importOnFirstTimeStartup": "automatic",
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.minimap.enabled": false,
+  "java.refactor.renameFromFileExplorer": "autoApply",
+  "task.problemMatchers.neverPrompt": {
+    "shell": true
+  },
+  // Color Override for terminal
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#5C6BC0",
+    "list.activeSelectionForeground": "#5C6BC0",
+    "list.inactiveSelectionForeground": "#5C6BC0",
+    "list.highlightForeground": "#5C6BC0",
+    "scrollbarSlider.activeBackground": "#5C6BC050",
+    "editorSuggestWidget.highlightForeground": "#5C6BC0",
+    "textLink.foreground": "#5C6BC0",
+    "progressBar.background": "#5C6BC0",
+    "pickerGroup.foreground": "#5C6BC0",
+    "tab.activeBorder": "#5C6BC0",
+    "notificationLink.foreground": "#5C6BC0",
+    "editorWidget.resizeBorder": "#5C6BC0",
+    "editorWidget.border": "#5C6BC0",
+    "settings.modifiedItemIndicator": "#5C6BC0",
+    "settings.headerForeground": "#5C6BC0",
+    "panelTitle.activeBorder": "#5C6BC0",
+    "breadcrumb.activeSelectionForeground": "#5C6BC0",
+    "menu.selectionForeground": "#5C6BC0",
+    "menubar.selectionForeground": "#5C6BC0",
+    "activityBar.activeBorder": "#5C6BC0",
+    "editor.findMatchBorder": "#5C6BC0",
+    "selection.background": "#5C6BC040",
+    "statusBarItem.remoteBackground": "#5C6BC0"
+  },
+  "materialTheme.accent": "Indigo",
+  "breadcrumbs.enabled": true,
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
+  "rust-analyzer.diagnostics.disabled": ["unresolved-proc-macro"],
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "window.commandCenter": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "aws.suppressPrompts": {
+    "codeWhispererNewWelcomeMessage": true
+  },
+  "dotenv.enableAutocloaking": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.env.osx": {
+    "CW_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Atom One Dark",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  }
 }
 
