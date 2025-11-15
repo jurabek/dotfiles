@@ -163,7 +163,7 @@ wombatColorSchemeInstall () {
         info "wombat color scheme already installed"
     else
         # Vim color scheme install
-        git clone https://github.com/sheerun/vim-wombat-scheme.git ~/.vim/colors/wombat 
+        git clone https://github.com/sheerun/vim-wombat-scheme.git ~/.vim/colors/wombat
         mv ~/.vim/colors/wombat/colors/* ~/.vim/colors/
         success 'vim wombat color scheme installed'
     fi
@@ -214,7 +214,7 @@ then
     else
         echo "jldeen's macOS dotfiles were not applied successfully..." >&2
 fi
-else 
+else
 	echo ''
     echo "You chose not to apply jldeen's macOS dotfiles. You will need to configure your environment manually..."
 	echo ''
@@ -223,5 +223,5 @@ else
 	echo "source $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc && echo "added zsh-syntax-highlighting to .zshrc..."
 	echo ''
 	echo "source $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc && echo "added zsh-autosuggestions to .zshrc..."
-	echo ''	
+	echo ''
 fi
