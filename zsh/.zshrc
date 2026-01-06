@@ -1,15 +1,18 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# source ~/.local/share/omarchy/default/bash/aliases
-# source ~/.local/share/omarchy/default/bash/functions
-# source ~/.local/share/omarchy/default/bash/envs
+source ~/.local/share/omarchy/default/bash/aliases
+source ~/.local/share/omarchy/default/bash/functions
+source ~/.local/share/omarchy/default/bash/envs
 
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:/usr/local/go/bin:$HOME/.local/bin
+export EDITOR=zeditor
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
+
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -22,7 +25,7 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/.local/bin
 plugins=(git gh fzf nvm golang docker zsh-autocomplete zsh-syntax-highlighting you-should-use)
 
 source $ZSH/oh-my-zsh.sh
-
+source <(fzf --zsh)
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -50,11 +53,6 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# bun completions
-[ -s "/home/jurabek/.bun/_bun" ] && source "/home/jurabek/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -67,3 +65,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Bitwarden SSH Agent
 export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
+. "/home/jurabek/.deno/env"
+
+# opencode
+export PATH=/home/jurabek/.opencode/bin:$PATH
