@@ -61,7 +61,7 @@ export PATH="$BUN_INSTALL/bin:$(go env GOPATH)/bin:$PATH"
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-
+export HSA_OVERRIDE_GFX_VERSION=11.0.0
 
 # Bitwarden SSH Agent
 export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"

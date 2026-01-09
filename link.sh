@@ -21,6 +21,7 @@ link_file() {
 link_file "$DOTFILES/zsh/.zshrc" "$HOME/.zshrc"
 link_file "$DOTFILES/electron/electron-flags.conf" "$HOME/.config/electron-flags.conf"
 link_file "$DOTFILES/git/config" "$HOME/.config/git/config"
+link_file "$DOTFILES/tmux/.tmux.conf" "$HOME/.config/tmux/tmux.conf"
 
 # directories
 link_file "$DOTFILES/pipewire" "$HOME/.config/pipewire"
