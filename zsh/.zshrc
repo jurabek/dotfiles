@@ -22,7 +22,7 @@ export ELECTRON_OZONE_PLATFORM_HINT=wayland
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gh fzf nvm golang docker zsh-autocomplete zsh-syntax-highlighting you-should-use)
+plugins=(git gh fzf nvm golang docker kubectl pip tmux claudecode zsh-autocomplete zsh-syntax-highlighting you-should-use)
 
 source $ZSH/oh-my-zsh.sh
 source <(fzf --zsh)
