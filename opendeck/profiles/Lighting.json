@@ -1,0 +1,402 @@
+{
+  "keys": [
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/actions/power@2x.png",
+        "name": "On / Off",
+        "plugin": "com.elgato.philips-hue.sdPlugin",
+        "property_inspector": "plugins/com.elgato.philips-hue.sdPlugin/pi/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/on@2x.png",
+            "name": "On",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/off@2x.png",
+            "name": "Off",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Turn lights on or off.",
+        "uuid": "com.elgato.philips-hue.power",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.0.0",
+      "current_state": 1,
+      "settings": {
+        "bridge": "c42996fffe6239ac",
+        "light": "g-82"
+      },
+      "states": [
+        {
+          "alignment": "bottom",
+          "colour": "#813d9c",
+          "family": "Liberation Sans",
+          "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/on@2x.png",
+          "name": "On",
+          "show": true,
+          "size": 14,
+          "style": "Regular",
+          "text": "Office",
+          "underline": false
+        },
+        {
+          "alignment": "bottom",
+          "colour": "#ffffff",
+          "family": "Liberation Sans",
+          "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/off@2x.png",
+          "name": "Off",
+          "show": true,
+          "size": 12,
+          "style": "Regular",
+          "text": "Hue Office",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/actions/color@2x.png",
+        "name": "Color",
+        "plugin": "com.elgato.philips-hue.sdPlugin",
+        "property_inspector": "plugins/com.elgato.philips-hue.sdPlugin/pi/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/color@2x.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Set the color of your light.",
+        "uuid": "com.elgato.philips-hue.color",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.1.0",
+      "current_state": 0,
+      "settings": {
+        "bridge": "c42996fffe6239ac",
+        "color": "#d760ff",
+        "light": "l-4"
+      },
+      "states": [
+        {
+          "alignment": "bottom",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/color@2x.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "style": "Regular",
+          "text": "Purple",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/actions/color@2x.png",
+        "name": "Color",
+        "plugin": "com.elgato.philips-hue.sdPlugin",
+        "property_inspector": "plugins/com.elgato.philips-hue.sdPlugin/pi/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/color@2x.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Set the color of your light.",
+        "uuid": "com.elgato.philips-hue.color",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.2.0",
+      "current_state": 0,
+      "settings": {
+        "bridge": "c42996fffe6239ac",
+        "color": "#ffbe6f",
+        "light": "l-4"
+      },
+      "states": [
+        {
+          "alignment": "bottom",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/color@2x.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "style": "Regular",
+          "text": "Cozy",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/actions/brightness@2x.png",
+        "name": "Brightness Relative",
+        "plugin": "com.elgato.philips-hue.sdPlugin",
+        "property_inspector": "plugins/com.elgato.philips-hue.sdPlugin/pi/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/brightness@2x.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Set the brightness of your light.",
+        "uuid": "com.elgato.philips-hue.brightness-rel",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.3.0",
+      "current_state": 0,
+      "settings": {
+        "bridge": "c42996fffe6239ac",
+        "brightnessRel": "10",
+        "light": "g-82"
+      },
+      "states": [
+        {
+          "alignment": "bottom",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/brightness@2x.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "style": "Regular",
+          "text": "Up",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/actions/brightness@2x.png",
+        "name": "Brightness Relative",
+        "plugin": "com.elgato.philips-hue.sdPlugin",
+        "property_inspector": "plugins/com.elgato.philips-hue.sdPlugin/pi/index.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/brightness@2x.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Set the brightness of your light.",
+        "uuid": "com.elgato.philips-hue.brightness-rel",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.4.0",
+      "current_state": 0,
+      "settings": {
+        "bridge": "c42996fffe6239ac",
+        "brightnessRel": "-10",
+        "light": "g-82"
+      },
+      "states": [
+        {
+          "alignment": "bottom",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "plugins/com.elgato.philips-hue.sdPlugin/plugin/images/icons/brightness@2x.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "style": "Regular",
+          "text": "Down",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.amansprojects.starterpack.sdPlugin/icons/runCommand.png",
+        "name": "Run Command",
+        "plugin": "com.amansprojects.starterpack.sdPlugin",
+        "property_inspector": "plugins/com.amansprojects.starterpack.sdPlugin/propertyInspector/runCommand.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.amansprojects.starterpack.sdPlugin/icons/runCommand.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Run a command",
+        "uuid": "com.amansprojects.starterpack.runcommand",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.5.0",
+      "current_state": 0,
+      "settings": {
+        "down": "/home/jurabek/dev/dotfiles/opendeck/elgato-toggle.sh",
+        "file": "",
+        "rotate": "",
+        "show": false,
+        "up": ""
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "style": "Regular",
+          "text": "Toggle\nElgato\nKey",
+          "underline": false
+        }
+      ]
+    },
+    null,
+    null,
+    null,
+    null,
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.amansprojects.starterpack.sdPlugin/icons/switchProfile.png",
+        "name": "Switch Profile",
+        "plugin": "com.amansprojects.starterpack.sdPlugin",
+        "property_inspector": "plugins/com.amansprojects.starterpack.sdPlugin/propertyInspector/switchProfile.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.amansprojects.starterpack.sdPlugin/icons/switchProfile.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Switch the selected profile",
+        "uuid": "com.amansprojects.starterpack.switchprofile",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.10.0",
+      "current_state": 0,
+      "settings": {
+        "device": "sd-A00SA5062LVCH6",
+        "profile": "Streaming"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "name": "",
+          "show": true,
+          "size": 14,
+          "style": "Regular",
+          "text": "Streaming",
+          "underline": false
+        }
+      ]
+    },
+    null,
+    null,
+    null,
+    null
+  ],
+  "sliders": []
+}

@@ -22,7 +22,7 @@ export ELECTRON_OZONE_PLATFORM_HINT=wayland
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gh fzf nvm golang docker kubectl pip tmux claudecode zsh-autocomplete zsh-syntax-highlighting you-should-use)
+plugins=(git gh fzf nvm golang docker kubectl archlinux pip tmux claudecode zsh-autocomplete zsh-syntax-highlighting you-should-use)
 
 source $ZSH/oh-my-zsh.sh
 source <(fzf --zsh)
@@ -39,7 +39,7 @@ source <(fzf --zsh)
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch $(uname -m)"
+export ARCHFLAGS="-arch $(uname -m)"
 
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
@@ -49,6 +49,7 @@ source <(fzf --zsh)
 # - $ZSH_CUSTOM/macos.zsh
 
 alias zed=zeditor
+alias cls=clear
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
@@ -62,6 +63,7 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export HSA_OVERRIDE_GFX_VERSION=11.0.0
+export OBS_WEBSOCKET_URL=obsws://localhost:4456/PZORf1nw0StQEbQQ
 
 # Bitwarden SSH Agent
 export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"

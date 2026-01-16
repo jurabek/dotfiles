@@ -1,0 +1,384 @@
+{
+  "keys": [
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": true,
+        "icon": "plugins/dev.theca11.multiobs.sdPlugin/assets/actions/togglerecord/icon.svg",
+        "name": "Record",
+        "plugin": "dev.theca11.multiobs.sdPlugin",
+        "property_inspector": "plugins/dev.theca11.multiobs.sdPlugin/propertyInspector/inspector.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/dev.theca11.multiobs.sdPlugin/assets/actions/togglerecord/key_on.svg",
+            "name": "Start",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/dev.theca11.multiobs.sdPlugin/assets/actions/togglerecord/key_off.svg",
+            "name": "Stop",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Start/stop recording",
+        "uuid": "dev.theca11.multiobs.togglerecord",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.0.0",
+      "current_state": 1,
+      "settings": {
+        "advanced": {
+          "bgColorActive": "#fefefe",
+          "bgColorInactive": "#fefefe",
+          "bgColorIntermediate": "#fefefe",
+          "fgColor": "#fefefe"
+        },
+        "common": {
+          "target": "1"
+        },
+        "params1": {
+          "showTime": "true"
+        }
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.svg",
+          "name": "Start",
+          "show": true,
+          "size": 16,
+          "style": "Regular",
+          "text": "00:00:00",
+          "underline": false
+        },
+        {
+          "alignment": "middle",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "1.svg",
+          "name": "Stop",
+          "show": true,
+          "size": 16,
+          "style": "Regular",
+          "text": "00:00:00",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": true,
+        "icon": "plugins/dev.theca11.multiobs.sdPlugin/assets/actions/setscene/icon.svg",
+        "name": "Scene",
+        "plugin": "dev.theca11.multiobs.sdPlugin",
+        "property_inspector": "plugins/dev.theca11.multiobs.sdPlugin/propertyInspector/inspector.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/dev.theca11.multiobs.sdPlugin/assets/actions/setscene/key_on.svg",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/dev.theca11.multiobs.sdPlugin/assets/actions/setscene/key_off.svg",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Set current scene",
+        "uuid": "dev.theca11.multiobs.setscene",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.1.0",
+      "current_state": 1,
+      "settings": {
+        "advanced": {
+          "bgColorActive": "#fefefe",
+          "bgColorInactive": "#fefefe",
+          "bgColorIntermediate": "#fefefe",
+          "fgColor": "#fefefe"
+        },
+        "common": {
+          "target": "1"
+        },
+        "params1": {
+          "sceneName": "Gaming",
+          "studioTarget": "program"
+        },
+        "params2": {
+          "studioTarget": "preview"
+        }
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.svg",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "style": "Regular",
+          "text": "Gaming",
+          "underline": false
+        },
+        {
+          "alignment": "middle",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "1.svg",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "style": "Regular",
+          "text": "Gaming",
+          "underline": false
+        }
+      ]
+    },
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": true,
+        "icon": "plugins/dev.theca11.multiobs.sdPlugin/assets/actions/setscene/icon.svg",
+        "name": "Scene",
+        "plugin": "dev.theca11.multiobs.sdPlugin",
+        "property_inspector": "plugins/dev.theca11.multiobs.sdPlugin/propertyInspector/inspector.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/dev.theca11.multiobs.sdPlugin/assets/actions/setscene/key_on.svg",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          },
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/dev.theca11.multiobs.sdPlugin/assets/actions/setscene/key_off.svg",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Set current scene",
+        "uuid": "dev.theca11.multiobs.setscene",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.2.0",
+      "current_state": 0,
+      "settings": {
+        "advanced": {
+          "bgColorActive": "#fefefe",
+          "bgColorInactive": "#fefefe",
+          "bgColorIntermediate": "#fefefe",
+          "fgColor": "#fefefe"
+        },
+        "common": {
+          "target": "1"
+        },
+        "params1": {
+          "sceneName": "Programming",
+          "studioTarget": "program"
+        },
+        "params2": {
+          "studioTarget": "preview"
+        }
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "0.svg",
+          "name": "",
+          "show": true,
+          "size": 11,
+          "style": "Regular",
+          "text": "Programming",
+          "underline": false
+        },
+        {
+          "alignment": "middle",
+          "colour": "#FFFFFF",
+          "family": "Liberation Sans",
+          "image": "1.svg",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "style": "Regular",
+          "text": "Programming",
+          "underline": false
+        }
+      ]
+    },
+    null,
+    null,
+    null,
+    null,
+    {
+      "action": {
+        "controllers": [
+          "Keypad",
+          "Encoder"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.amansprojects.starterpack.sdPlugin/icons/runCommand.png",
+        "name": "Run Command",
+        "plugin": "com.amansprojects.starterpack.sdPlugin",
+        "property_inspector": "plugins/com.amansprojects.starterpack.sdPlugin/propertyInspector/runCommand.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.amansprojects.starterpack.sdPlugin/icons/runCommand.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Run a command",
+        "uuid": "com.amansprojects.starterpack.runcommand",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.7.0",
+      "current_state": 0,
+      "settings": {
+        "down": "/home/jurabek/dev/dotfiles/opendeck/obs_zoom_execute.sh",
+        "file": "",
+        "rotate": "",
+        "show": false,
+        "up": ""
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "colour": "#241f31",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "name": "",
+          "show": true,
+          "size": 21,
+          "style": "Regular",
+          "text": "Zoom\nMouse",
+          "underline": false
+        }
+      ]
+    },
+    null,
+    null,
+    {
+      "action": {
+        "controllers": [
+          "Keypad"
+        ],
+        "disable_automatic_states": false,
+        "icon": "plugins/com.amansprojects.starterpack.sdPlugin/icons/switchProfile.png",
+        "name": "Switch Profile",
+        "plugin": "com.amansprojects.starterpack.sdPlugin",
+        "property_inspector": "plugins/com.amansprojects.starterpack.sdPlugin/propertyInspector/switchProfile.html",
+        "states": [
+          {
+            "alignment": "middle",
+            "colour": "#FFFFFF",
+            "family": "Liberation Sans",
+            "image": "plugins/com.amansprojects.starterpack.sdPlugin/icons/switchProfile.png",
+            "name": "",
+            "show": true,
+            "size": 16,
+            "style": "Regular",
+            "text": "",
+            "underline": false
+          }
+        ],
+        "supported_in_multi_actions": true,
+        "tooltip": "Switch the selected profile",
+        "uuid": "com.amansprojects.starterpack.switchprofile",
+        "visible_in_action_list": true
+      },
+      "children": null,
+      "context": "Keypad.10.0",
+      "current_state": 0,
+      "settings": {
+        "device": "sd-A00SA5062LVCH6",
+        "profile": "Lighting"
+      },
+      "states": [
+        {
+          "alignment": "middle",
+          "colour": "#241f31",
+          "family": "Liberation Sans",
+          "image": "0.png",
+          "name": "",
+          "show": true,
+          "size": 16,
+          "style": "Regular",
+          "text": "Lights",
+          "underline": false
+        }
+      ]
+    },
+    null,
+    null,
+    null,
+    null
+  ],
+  "sliders": []
+}
