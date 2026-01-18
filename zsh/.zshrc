@@ -65,6 +65,10 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export HSA_OVERRIDE_GFX_VERSION=11.0.0
 export OBS_WEBSOCKET_URL=obsws://localhost:4456/PZORf1nw0StQEbQQ
 
+RESOLVE_SCRIPT_API="/opt/resolve/Developer/Scripting"
+RESOLVE_SCRIPT_LIB="/opt/resolve/libs/Fusion/fusionscript.so"
+PYTHONPATH="$PYTHONPATH:$RESOLVE_SCRIPT_API/Modules/"
+
 # Bitwarden SSH Agent
 export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
 . "/home/jurabek/.deno/env"
