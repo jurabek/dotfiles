@@ -10,21 +10,17 @@
   "disable_ai": false,
   "ssh_connections": [
     {
-      "host": "192.168.188.100",
+      "host": "192.168.0.0",
       "args": [],
       "projects": [
         {
-          "paths": [
-            "/mnt/user/appdata/./"
-          ]
+          "paths": ["/mnt/user/appdata/./"],
         },
         {
-          "paths": [
-            "/mnt/user/appdata/selfhosted/./"
-          ]
-        }
-      ]
-    }
+          "paths": ["/mnt/user/appdata/selfhosted/./"],
+        },
+      ],
+    },
   ],
   "agent_ui_font_size": 16.0,
   "project_panel": {
