@@ -1,0 +1,47 @@
+KVM Setup in Arch Linux - Step by Step
+
+1. Check CPU virtualization support
+   lscpu | grep -E "Virtualization|VMX|SVM"
+
+2. Check if KVM modules are loaded
+   lsmod | grep kvm
+
+3. Install required packages
+   sudo pacman -S qemu-full virt-manager dnsmasq edk2-ovmf swtpm
+
+4. Load KVM modules
+   sudo modprobe kvm
+   sudo modprobe kvm_amd
+   echo "kvm_amd" | sudo tee /etc/modules-load.d/kvm.conf
+
+5. Add user to groups
+   sudo usermod -aG libvirt $USER
+   sudo usermod -aG kvm $USER
+   newgrp libvirt
+
+6. Enable and start services
+   sudo systemctl enable --now libvirtd
+   sudo systemctl enable --now virtlogd
+
+7. Verify /dev/kvm exists
+   ls -la /dev/kvm
+
+TROUBLESHOOTING - Python Version Issues
+
+If virt-manager fails with import errors, check Python version:
+   python3 --version
+
+If Python is 3.13 but packages need 3.14, upgrade Python:
+   sudo pacman -S python python-gobject
+
+If libxml2 module not found (built for wrong Python version):
+   sudo pacman -S --force libxml2
+
+Install missing Python packages if needed:
+   sudo pacman -S python-libvirt python-gobject python-lxml python-urllib3 python-idna python-chardet python-requests python-cairo
+
+Test virt-manager:
+   virt-manager --version
+
+Launch virt-manager GUI:
+   virt-manager
