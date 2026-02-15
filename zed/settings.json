@@ -7,6 +7,36 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent": {
+    "default_model": {
+      "provider": "Z.AI",
+      "model": "GLM-4.7"
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "language_models": {
+    "openai_compatible": {
+      "Z.AI": {
+        "api_url": "https://api.z.ai/api/coding/paas/v4",
+        "available_models": [
+          {
+            "name": "GLM-4.7",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true
+            }
+          }
+        ]
+      }
+    }
+  },
   "disable_ai": false,
   "ssh_connections": [
     {
@@ -28,8 +58,8 @@
   },
   "icon_theme": "VSCode Icons for Zed (Dark Official Icons)",
   "terminal": {
-    "font_size": 13.0,
-    "font_family": "JetBrainsMono Nerd Font Mono",
+    "font_size": 14.0,
+    "font_family": "JetBrainsMono Nerd Font",
     "line_height": "standard",
   },
   "telemetry": {
@@ -44,8 +74,9 @@
     "dotenv": [".env*"],
   },
   "vim_mode": true,
-  "ui_font_size": 16.0,
+  "ui_font_size": 18.0,
   "buffer_font_size": 14,
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",

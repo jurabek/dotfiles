@@ -24,6 +24,7 @@ link_file "$DOTFILES/git/config" "$HOME/.config/git/config"
 link_file "$DOTFILES/tmux/.tmux.conf" "$HOME/.config/tmux/tmux.conf"
 link_file "$DOTFILES/hypr/bindings.conf" "$HOME/.config/hypr/bindings.conf"
 link_file "$DOTFILES/hypr/envs.conf" "$HOME/.config/hypr/envs.conf"
+link_file "$DOTFILES/distrobox/.distroboxrc" "$HOME/.distroboxrc"
 
 # directories
 link_file "$DOTFILES/pipewire" "$HOME/.config/pipewire"
