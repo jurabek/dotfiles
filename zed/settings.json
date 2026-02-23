@@ -8,12 +8,13 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "agent": {
+    "default_profile": "write",
     "default_model": {
       "provider": "Z.AI",
-      "model": "GLM-4.7"
+      "model": "GLM-4.7",
     },
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "language_models": {
     "openai_compatible": {
@@ -30,29 +31,46 @@
               "images": false,
               "parallel_tool_calls": false,
               "prompt_cache_key": false,
-              "chat_completions": true
-            }
-          }
-        ]
-      }
-    }
+              "chat_completions": true,
+            },
+          },
+        ],
+      },
+    },
   },
   "disable_ai": false,
   "ssh_connections": [
     {
-      "host": "192.168.0.0",
+      "host": "192.168.188.200",
+      "username": "jurabek",
       "args": [],
       "projects": [
         {
-          "paths": ["/mnt/user/appdata/./"],
+          "paths": [
+            "/home/jurabek"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "192.168.188.100",
+      "username": "root",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/mnt/user/appdata/openclaw"
+          ]
         },
         {
-          "paths": ["/mnt/user/appdata/selfhosted/./"],
-        },
-      ],
-    },
+          "paths": [
+            "/mnt/user/appdata/selfhosted"
+          ]
+        }
+      ]
+    }
   ],
-  "agent_ui_font_size": 16.0,
+  "agent_ui_font_size": 20.0,
   "project_panel": {
     "dock": "right",
   },
@@ -61,6 +79,9 @@
     "font_size": 14.0,
     "font_family": "JetBrainsMono Nerd Font",
     "line_height": "standard",
+    "shell": {
+      "program": "zsh",
+    },
   },
   "telemetry": {
     "diagnostics": false,

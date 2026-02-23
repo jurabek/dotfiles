@@ -9,7 +9,7 @@ fi
 
 # env vars
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:$HOME/.local/go/bin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/go/bin:$HOME/.local/bin:$HOME/.cargo/bin"
 export EDITOR=zeditor
 export ELECTRON_OZONE_PLATFORM_HINT=wayland
 export PATH="$PATH:$(go env GOPATH)/bin"
@@ -28,14 +28,15 @@ RESOLVE_SCRIPT_LIB="/opt/resolve/libs/Fusion/fusionscript.so"
 PYTHONPATH="$PYTHONPATH:$RESOLVE_SCRIPT_API/Modules/"
 
 # Bitwarden SSH Agent
-export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
+BITWARDEN_HOME="$HOME/.var/app/com.bitwarden.desktop/data"
+export SSH_AUTH_SOCK="$BITWARDEN_HOME/.bitwarden-ssh-agent.sock"
 
 glm() {
     export ANTHROPIC_BASE_URL="https://api.z.ai/api/anthropic"
     export ANTHROPIC_AUTH_TOKEN="${Z_AI_API_KEY}"
     export ANTHROPIC_DEFAULT_HAIKU_MODEL="glm-4.5-air"
-    export ANTHROPIC_DEFAULT_SONNET_MODEL="glm-4.7"
-    export ANTHROPIC_DEFAULT_OPUS_MODEL="glm-4.7"
+    export ANTHROPIC_DEFAULT_SONNET_MODEL="glm-5"
+    export ANTHROPIC_DEFAULT_OPUS_MODEL="glm-5"
     claude "$@"
 }
 
@@ -72,6 +73,8 @@ export ARCHFLAGS="-arch $(uname -m)"
 
 alias zed=zeditor
 alias cls=clear
+alias cd=z
+alias ls=lsd
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 # opencode
@@ -84,3 +87,12 @@ alias docker=podman
 
 # opencode
 export PATH=/home/jurabek/.opencode/bin:$PATH
+
+# Load helper functions
+for file in $HOME/dev/dotfiles/zsh/functions.d/*.zsh; do
+  [ -f "$file" ] && source "$file"
+done
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
