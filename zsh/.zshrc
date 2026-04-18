@@ -9,7 +9,7 @@ fi
 
 # env vars
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:$HOME/.local/go/bin:$HOME/.local/bin:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.local/go/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin"
 export EDITOR=zeditor
 export ELECTRON_OZONE_PLATFORM_HINT=wayland
 export PATH="$PATH:$(go env GOPATH)/bin"
@@ -21,8 +21,6 @@ export NVM_DIR="$HOME/.nvm"
 export HSA_OVERRIDE_GFX_VERSION=11.0.0
 export OBS_WEBSOCKET_URL=obsws://localhost:4456/PZORf1nw0StQEbQQ
 
-export DOCKER_HOST=unix://$(podman info --format '{{.Host.RemoteSocket.Path}}')
-
 RESOLVE_SCRIPT_API="/opt/resolve/Developer/Scripting"
 RESOLVE_SCRIPT_LIB="/opt/resolve/libs/Fusion/fusionscript.so"
 PYTHONPATH="$PYTHONPATH:$RESOLVE_SCRIPT_API/Modules/"
@@ -31,15 +29,11 @@ PYTHONPATH="$PYTHONPATH:$RESOLVE_SCRIPT_API/Modules/"
 BITWARDEN_HOME="$HOME/.var/app/com.bitwarden.desktop/data"
 export SSH_AUTH_SOCK="$BITWARDEN_HOME/.bitwarden-ssh-agent.sock"
 
-glm() {
-    export ANTHROPIC_BASE_URL="https://api.z.ai/api/anthropic"
-    export ANTHROPIC_AUTH_TOKEN="${Z_AI_API_KEY}"
-    export ANTHROPIC_DEFAULT_HAIKU_MODEL="glm-4.5-air"
-    export ANTHROPIC_DEFAULT_SONNET_MODEL="glm-5"
-    export ANTHROPIC_DEFAULT_OPUS_MODEL="glm-5"
-    claude "$@"
-}
-
+export ANTHROPIC_BASE_URL="https://api.z.ai/api/anthropic"
+export ANTHROPIC_AUTH_TOKEN="${Z_AI_API_KEY}"
+export ANTHROPIC_DEFAULT_HAIKU_MODEL="glm-4.5-air"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="glm-4.7"
+export ANTHROPIC_DEFAULT_OPUS_MODEL="glm-4.7"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -79,9 +73,6 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 # opencode
 # export PATH=/home/jurabek/.opencode/bin:$PATH
-
-
-alias docker=podman
 
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
