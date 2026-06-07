@@ -19,16 +19,17 @@ link_file() {
 
 # files
 link_file "$DOTFILES/zsh/.zshrc" "$HOME/.zshrc"
-link_file "$DOTFILES/electron/electron-flags.conf" "$HOME/.config/electron-flags.conf"
+# link_file "$DOTFILES/electron/electron-flags.conf" "$HOME/.config/electron-flags.conf"
 link_file "$DOTFILES/git/config" "$HOME/.config/git/config"
 link_file "$DOTFILES/tmux/.tmux.conf" "$HOME/.config/tmux/tmux.conf"
-link_file "$DOTFILES/hypr/bindings.conf" "$HOME/.config/hypr/bindings.conf"
-link_file "$DOTFILES/hypr/envs.conf" "$HOME/.config/hypr/envs.conf"
-link_file "$DOTFILES/distrobox/.distroboxrc" "$HOME/.distroboxrc"
+link_file "$DOTFILES/starship/.config/starship.toml" "$HOME/.config/starship.toml"
+# link_file "$DOTFILES/hypr/bindings.conf" "$HOME/.config/hypr/bindings.conf"
+# link_file "$DOTFILES/hypr/envs.conf" "$HOME/.config/hypr/envs.conf"
+# link_file "$DOTFILES/distrobox/.distroboxrc" "$HOME/.distroboxrc"
 
 # directories
-link_file "$DOTFILES/pipewire" "$HOME/.config/pipewire"
-link_file "$DOTFILES/waybar" "$HOME/.config/waybar"
+# link_file "$DOTFILES/pipewire" "$HOME/.config/pipewire"
+# link_file "$DOTFILES/waybar" "$HOME/.config/waybar"
 
 # opendeck profiles (copy to all device folders, symlinks not supported)
 for device_dir in "$HOME/.config/opendeck/profiles/"*/; do

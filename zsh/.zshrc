@@ -9,8 +9,7 @@ fi
 
 # env vars
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:$HOME/.local/go/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin"
-export EDITOR=zeditor
+export PATH="$PATH:$HOME/.local/go/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/local/go/bin"
 export ELECTRON_OZONE_PLATFORM_HINT=wayland
 export PATH="$PATH:$(go env GOPATH)/bin"
 export NVM_DIR="$HOME/.nvm"
@@ -65,7 +64,6 @@ export ARCHFLAGS="-arch $(uname -m)"
 # - $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
 
-alias zed=zeditor
 alias cls=clear
 alias cd=z
 alias ls=lsd
