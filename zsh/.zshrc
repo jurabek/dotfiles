@@ -7,26 +7,25 @@ if [ -f $HOME/.encrypt ]; then
     source $HOME/.encrypt
 fi
 
+export GOPRIVATE="github.com/sumup/*"
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+export ANDROID_HOME=$HOME/Library/Android/sdk
+
 # env vars
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:$HOME/.local/go/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/local/go/bin"
-export ELECTRON_OZONE_PLATFORM_HINT=wayland
-export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="$PATH:$HOME/.local/go/bin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/go/bin"
 export NVM_DIR="$HOME/.nvm"
 
 # export ANDROID_HOME=$HOME/Android/Sdk
 # export PATH=$PATH:$ANDROID_HOME/emulator
 # export PATH=$PATH:$ANDROID_HOME/platform-tools
-export HSA_OVERRIDE_GFX_VERSION=11.0.0
-export OBS_WEBSOCKET_URL=obsws://localhost:4456/PZORf1nw0StQEbQQ
 
-RESOLVE_SCRIPT_API="/opt/resolve/Developer/Scripting"
-RESOLVE_SCRIPT_LIB="/opt/resolve/libs/Fusion/fusionscript.so"
-PYTHONPATH="$PYTHONPATH:$RESOLVE_SCRIPT_API/Modules/"
-
-# Bitwarden SSH Agent
-BITWARDEN_HOME="$HOME/.var/app/com.bitwarden.desktop/data"
-export SSH_AUTH_SOCK="$BITWARDEN_HOME/.bitwarden-ssh-agent.sock"
+export ANTHROPIC_BASE_URL="https://api.z.ai/api/anthropic"
+export ANTHROPIC_AUTH_TOKEN="${Z_AI_API_KEY}"
+export ANTHROPIC_DEFAULT_HAIKU_MODEL="glm-4.5-air"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="glm-5.1"
+export ANTHROPIC_DEFAULT_OPUS_MODEL="glm-5.1"
 
 export ANTHROPIC_BASE_URL="https://api.z.ai/api/anthropic"
 export ANTHROPIC_AUTH_TOKEN="${Z_AI_API_KEY}"
@@ -39,7 +38,7 @@ export ANTHROPIC_DEFAULT_OPUS_MODEL="glm-4.7"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gh fzf nvm golang docker kubectl tmux archlinux pip tmux zsh-autocomplete zsh-syntax-highlighting zsh-you-should-use)
+plugins=(git gh fzf golang docker kubectl tmux zsh-autosuggestions zsh-syntax-highlighting zsh-you-should-use)
 
 source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -48,40 +47,35 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='zed'
+fi
 
 # Compilation flags
 export ARCHFLAGS="-arch $(uname -m)"
-
-# Set personal aliases, overriding those provided by Oh My Zsh libs,
-# plugins, and themes. Aliases can be placed here, though Oh My Zsh
-# users are encouraged to define aliases within a top-level file in
-# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
-# - $ZSH_CUSTOM/aliases.zsh
-# - $ZSH_CUSTOM/macos.zsh
 
 alias cls=clear
 alias cd=z
 alias ls=lsd
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-# opencode
-# export PATH=/home/jurabek/.opencode/bin:$PATH
 
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
+# OS-specific configs
+if [[ "$(uname)" == "Darwin" ]]; then
+    [ -f ${ZSH_CUSTOM}/macos.zsh ] && source ${ZSH_CUSTOM}/macos.zsh
+elif [[ "$(uname)" == "Linux" ]]; then
+    [ -f ${ZSH_CUSTOM}/linux.zsh ] && source ${ZSH_CUSTOM}/linux.zsh
+fi
+
 # opencode
-export PATH=/home/jurabek/.opencode/bin:$PATH
+export PATH=/Users/jurabekazizkhujaev/.opencode/bin:$PATH
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
-# Load helper functions
-for file in $HOME/dev/dotfiles/zsh/functions.d/*.zsh; do
-  [ -f "$file" ] && source "$file"
-done
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Added by Antigravity CLI installer
+export PATH="/Users/jurabekazizkhujaev/.local/bin:$PATH"
