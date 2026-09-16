@@ -1,0 +1,66 @@
+locale: "en"
+
+variableGroups:
+  - title: "Required"
+    variables:
+      - compartment_ocid
+      - ssh_public_key
+
+  - title: "VM settings"
+    variables:
+      - vm_name_prefix
+      - vm_count
+      - instance_ocpus
+      - instance_memory_in_gbs
+      - create_load_balancer
+
+variables:
+  compartment_ocid:
+    type: oci:identity:compartment:id
+    title: "Compartment"
+    description: "Everything for this stack is created in this compartment."
+    required: true
+
+  ssh_public_key:
+    type: oci:core:ssh:publickey
+    title: "SSH public key"
+    description: "Paste or upload your PUBLIC SSH key. Ubuntu login user is ubuntu."
+    required: true
+
+  vm_name_prefix:
+    type: string
+    title: "Name"
+    description: "Used for VM and network display names. It does not need to be globally unique."
+    required: true
+    default: "ubuntu-a1"
+
+  vm_count:
+    type: integer
+    title: "Number of VMs"
+    description: "Creates this many VMs in the new VCN/subnet."
+    required: true
+    default: 1
+    minimum: 1
+    maximum: 10
+    multipleOf: 1
+
+  instance_ocpus:
+    type: number
+    title: "OCPUs per VM"
+    required: true
+    default: 1
+    minimum: 1
+
+  instance_memory_in_gbs:
+    type: number
+    title: "Memory (GB) per VM"
+    required: true
+    default: 6
+    minimum: 1
+
+  create_load_balancer:
+    type: boolean
+    title: "Create public Load Balancer"
+    description: "When enabled, all VMs are automatically added as port-80 backends."
+    required: true
+    default: true

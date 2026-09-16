@@ -1,5 +1,16 @@
 # macOS-specific configs
 
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+
+_java_cache="${XDG_CACHE_HOME:-$HOME/.cache}/java_home_17"
+if [[ -r $_java_cache && -d $(<$_java_cache) ]]; then
+  export JAVA_HOME="$(<"$_java_cache")"
+else
+  export JAVA_HOME=$(/usr/libexec/java_home -v 17 2>/dev/null)
+  [[ -n $JAVA_HOME ]] && mkdir -p "${_java_cache:h}" && print -r -- "$JAVA_HOME" >| "$_java_cache"
+fi
+unset _java_cache
+
 export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
 export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
 

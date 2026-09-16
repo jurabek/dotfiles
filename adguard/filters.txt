@@ -1,0 +1,2 @@
+||home^$dnsrewrite=192.168.188.200
+||home.jurabek.dev^$dnsrewrite=192.168.188.200
