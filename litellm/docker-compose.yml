@@ -1,0 +1,35 @@
+services:
+  litellm:
+    image: docker.litellm.ai/berriai/litellm:main-stable
+    container_name: litellm-proxy
+    restart: always
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./config.yaml:/app/config.yaml
+      - ~/.config/litellm/github_copilot:/root/.config/litellm/github_copilot
+    environment:
+      DATABASE_URL: postgresql://llmproxy:dbpassword9090@db:5432/litellm
+    command: ["--config", "/app/config.yaml"]
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:16
+    container_name: litellm-db
+    restart: always
+    environment:
+      POSTGRES_DB: litellm
+      POSTGRES_USER: llmproxy
+      POSTGRES_PASSWORD: dbpassword9090
+    volumes:
+      - litellm_db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d litellm -U llmproxy"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  litellm_db:

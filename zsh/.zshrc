@@ -61,3 +61,11 @@ fi
 
 export PATH="$HOME/.opencode/bin:$HOME/.bun/bin:$HOME/.local/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun"
+
+# LiteLLM proxy for Claude
+export ANTHROPIC_BASE_URL="http://localhost:4000"
+export ANTHROPIC_API_KEY="sk-litellm-local"
+export ANTHROPIC_MODEL="claude-sonnet-5-5"
+export ANTHROPIC_DEFAULT_OPUS_MODEL="claude-opus-5-5"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="claude-sonnet-5-5"
+export ANTHROPIC_DEFAULT_HAIKU_MODEL="claude-haiku-4-5"
